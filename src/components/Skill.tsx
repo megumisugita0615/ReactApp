@@ -9,7 +9,7 @@ import { GrMysql } from 'react-icons/gr'
 import { SiJavascript, SiTypescript } from 'react-icons/si'
 
 function createData (
-  devicon: any,
+  devicon: JSX.Element,
   skill: string,
   content: string,
   work: string
@@ -95,7 +95,7 @@ const Skill: FC = () => {
             </Box>
             <Box className='skill-table'>
                     {rows.map((row) => (
-                        <Box className='skill-table-bg bg-light' sx={{ mb: 2, p: 2 }}>
+                        <Box className='skill-table-bg bg-light' sx={{ mb: 2, p: 2 }} key={row.skill}>
                             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                                 <h1 className='skill-table-devicon middle-text'>{row.devicon}</h1>
                             </Box>

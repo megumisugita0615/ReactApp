@@ -1,0 +1,46 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 筆記体 */
+.signature {
+    color: #006d77;
+    font-family: "Sacramento", cursive;
+}
+
+/* セクション */
+.section-title {
+    color: #87bcc1;
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+/* オリジナルカラーテーマ */
+.dark-text {
+    color: #006d77;
+}
+.middle-text {
+    color: #87bcc1;
+}
+.light-text {
+    color: #e7eeee;
+}
+.bg-dark {
+    background-color: #006d77;
+}
+.bg-middle {
+    background-color: #87bcc1;
+}
+.bg-light {
+    background-color: #e7eeee;
+}

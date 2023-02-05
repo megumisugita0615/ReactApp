@@ -27,7 +27,7 @@ const Career: FC = () => {
             <Box className='career-table'>
                 <Box className='career-table-bg bg-light' sx={{ py: 2, px: -2 }}>
                     {rows.map((row) => (
-                        <Box sx={{ mb: 1 }}>
+                        <Box sx={{ mb: 1 }} key={row.year}>
                             <Grid container spacing={2}>
                                 <Grid item lg={3}>
                                     <Box sx={{ pr: 2, display: 'flex', justifyContent: 'flex-end' }}>{row.year}</Box>

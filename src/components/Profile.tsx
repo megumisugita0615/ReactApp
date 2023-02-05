@@ -17,7 +17,7 @@ const Profile: FC = () => {
                 <p className='section-title'>About</p>
             </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', mr: 2 }}>
-                    <img src={profilePhoto} className="profile-photo" alt="profile-photo" />
+                    <img src={profilePhoto} className="profile-photo" alt="profile" />
                 </Box>
                 <Box className='profile-intro' sx={{ mb: 10 }}>
                     <p>{profileIntro}</p>

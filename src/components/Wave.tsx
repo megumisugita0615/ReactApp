@@ -10,6 +10,7 @@ const WaveAnimation: FC = () => {
   const literColor = '#e7eeee'
   const darkColor = '#569FA5'
   const accentColor = '#006D77'
+  // const transColor = 'transparent'
 
   function createData (
     zindex: number,

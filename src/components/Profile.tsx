@@ -12,17 +12,17 @@ const Profile: FC = () => {
 
   return (
     <div>
-        <Container>
-            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                <p className='section-title'>About</p>
-            </Box>
-                <Box sx={{ display: 'flex', justifyContent: 'center', mr: 2 }}>
-                    <img src={profilePhoto} className="profile-photo" alt="profile" />
-                </Box>
-                <Box className='profile-intro' sx={{ mb: 10 }}>
-                    <p>{profileIntro}</p>
-                </Box>
-        </Container>
+      <Container>
+          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+              <p className='section-title'>About</p>
+          </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'center', mr: 2 }}>
+                  <img src={profilePhoto} className="profile-photo" alt="profile" />
+              </Box>
+               <Box className='profile-intro' sx={{ mb: 10 }}>
+                  <p>{profileIntro}</p>
+              </Box>
+      </Container>
     </div>
   )
 }

@@ -10,6 +10,7 @@ const WaveAnimation: FC = () => {
   const literColor = '#e7eeee'
   const darkColor = '#569FA5'
   const accentColor = '#006D77'
+  // const transColor = 'transparent'
 
   function createData (
     zindex: number,
@@ -50,6 +51,23 @@ const WaveAnimation: FC = () => {
                 />
             </div>
         ))}
+        <div key={wave.zindex} style={{ position: 'absolute', bottom: 0, zIndex: wave.zindex, width: '100%', height: wave.height }}>
+          <Wave
+            fill="url(#gradient)"
+            options={{
+                height: 60,
+                amplitude: 30,
+                speed: 0.10,
+                points: 12,
+              }}>
+            <defs>
+              <linearGradient id="gradient" gradientTransform="rotate(90)">
+                <stop offset="10%"  stopColor="#d4af37" />
+                <stop offset="90%" stopColor="#f00" />
+              </linearGradient>
+            </defs>
+          </Wave>
+        </div>
     </div>
   )
 }

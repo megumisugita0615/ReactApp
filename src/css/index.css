@@ -49,3 +49,7 @@ code {
 .bg-light {
     background-color: #e7eeee;
 }
+
+.bg-trans {
+    background-color: transparent;
+}

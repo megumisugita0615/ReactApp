@@ -7,6 +7,7 @@ import Career from './components/Career'
 import KeyVisual from './components/KeyVisual'
 import Profile from './components/Profile'
 import Skill from './components/Skill'
+import TsParticles from './components/TsParicles'
 import WaveAnimation from './components/Wave'
 
 function App (): ReactJSXElement {
@@ -16,7 +17,10 @@ function App (): ReactJSXElement {
       <Box>
         <KeyVisual/>
       </Box>
-      <Box className='bg-light'>
+      <Box sx={{ mt: '100' }}>
+        <TsParticles />
+      </Box>
+      <Box className='bg-trans'>
         <WaveAnimation/>
         <Box sx={{ pt: 10 }}>
           <Profile/>
@@ -24,6 +28,7 @@ function App (): ReactJSXElement {
           <Skill/>
         </Box>
       </Box>
+
     </div>
   )
 }

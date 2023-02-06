@@ -24,11 +24,11 @@ const Career: FC = () => {
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                 <p className='section-title'>Career</p>
             </Box>
-            <Box className='career-table'>
-                <Box className='career-table-bg bg-light' sx={{ py: 2, px: -2 }}>
+            <Box className='career-table' sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Box className='career-table-bg bg-light' sx={{ py: 2, px: 2 }}>
                     {rows.map((row) => (
                         <Box sx={{ mb: 1 }} key={row.year}>
-                            <Grid container spacing={2}>
+                            <Grid container spacing={1}>
                                 <Grid item lg={3}>
                                     <Box sx={{ pr: 2, display: 'flex', justifyContent: 'flex-end' }}>{row.year}</Box>
                                 </Grid>

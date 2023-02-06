@@ -1,20 +1,30 @@
 .skill-table {
-    padding-left: 20vw;
-    padding-right: 20vw;
+    margin: 0 auto;
 }
 
-.skill-table-bg {
+.skill-table-item {
+    display: flex;
+}
+
+.skill-table-item-bg {
+    align-self: stretch;
     border-radius: 1rem;
 }
 
 .skill-table-devicon {
     font-size: 5rem;
     height: 5rem;
-    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 0;
     padding: 0;
 }
 
 .skill-table-title {
     margin: 0;
     padding: 0.5rem;
+}
+
+.devicon-spacing {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

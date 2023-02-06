@@ -6,18 +6,20 @@ import KeyVisual from './components/KeyVisual'
 import Profile from './components/Profile'
 import Skill from './components/Skill'
 import WaveAnimation from './components/Wave'
+// Style
+import { Box } from '@mui/material'
 
 function App (): ReactJSXElement {
   return (
     <div className="App">
       {/* <Header/> */}
       <KeyVisual/>
-      <div className='bg-light'>
+      <Box className='bg-light'>
         <WaveAnimation/>
-        <Profile/>
-        <Career/>
-        <Skill/>
-      </div>
+          <Profile/>
+          <Career/>
+          <Skill/>
+      </Box>
     </div>
   )
 }

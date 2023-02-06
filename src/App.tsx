@@ -1,21 +1,23 @@
-// components
 import { type ReactJSXElement } from '@emotion/react/types/jsx-namespace'
+// components
 import Career from './components/Career'
-import Header from './components/Header'
+// import Header from './components/Header'
 import KeyVisual from './components/KeyVisual'
 import Profile from './components/Profile'
 import Skill from './components/Skill'
-// Style
-// import { Container } from '@mui/material';
+import WaveAnimation from './components/Wave'
 
 function App (): ReactJSXElement {
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/> */}
       <KeyVisual/>
-      <Profile/>
-      <Career/>
-      <Skill/>
+      <div className='bg-light'>
+        <WaveAnimation/>
+        <Profile/>
+        <Career/>
+        <Skill/>
+      </div>
     </div>
   )
 }

@@ -23,8 +23,11 @@ code {
 /* セクション */
 .section-title {
     color: #87bcc1;
+    font-family: "Sacramento", cursive;
     font-size: 4rem;
     font-weight: 200;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 /* オリジナルカラーテーマ */

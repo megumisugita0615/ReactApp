@@ -10,7 +10,7 @@ const KeyVisual: FC = () => {
 
   return (
     <div>
-        <div className='key-bg bg-light'>
+        <div className='key-bg'>
             <Container>
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Box sx={{ display: 'block' }}>

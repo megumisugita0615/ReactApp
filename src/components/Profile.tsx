@@ -8,19 +8,23 @@ import profilePhoto from '../img/my-profile.png'
 
 const Profile: FC = () => {
   const profileIntro =
-    '東京在住のWebエンジニア。デジタルマーケティング支援企業に勤務。未経験のWebエンジニアとして新卒入社し、実際に開発しながらWeb技術を広く学習。得意分野はバックエンド。フロントエンドとWebデザインも精力的に学習中。'
+  <div>
+    <p>東京在住のWebエンジニア。デジタルマーケティング支援企業に勤務。</p>
+    <p>PHPとJavaScriptをよく書いています。最近はReactに力を入れて勉強中です。</p>
+    <p>人と一緒にものを作り上げていくことが大好きです。エンジニアリングもディレクション、どちらでもプロフェッショナルなクリエイターを目指しています。</p>
+  </div>
 
   return (
     <div>
       <Container>
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'center', color: 'primary.contrastText' }}>
               <p className='section-title'>About</p>
           </Box>
               <Box sx={{ display: 'flex', justifyContent: 'center', mr: 2 }}>
                   <img src={profilePhoto} className="profile-photo" alt="profile" />
               </Box>
-               <Box className='profile-intro' sx={{ mb: 10 }}>
-                  <p>{profileIntro}</p>
+              <Box className='profile-intro' sx={{ mb: 10 }}>
+                  {profileIntro}
               </Box>
       </Container>
     </div>

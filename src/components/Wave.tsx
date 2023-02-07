@@ -1,16 +1,15 @@
 import { type FC } from 'react'
-// Library
-import Wave from 'react-wavify'
 // Style
 import '../css/index.css'
 import '../css/Wave.css'
+// Library
+import Wave from 'react-wavify'
 
 const WaveAnimation: FC = () => {
   const mainColor = '#87bcc1'
   const literColor = '#e7eeee'
   const darkColor = '#569FA5'
   const accentColor = '#006D77'
-  // const transColor = 'transparent'
 
   function createData (
     zindex: number,
@@ -37,7 +36,7 @@ const WaveAnimation: FC = () => {
   ]
 
   return (
-    <div className='wave-bg'>
+    <div>
         {waveInfo.map((wave) => (
             <div key={wave.zindex} style={{ position: 'absolute', bottom: 0, zIndex: wave.zindex, width: '100%', height: wave.height }}>
                 <Wave fill={wave.color}

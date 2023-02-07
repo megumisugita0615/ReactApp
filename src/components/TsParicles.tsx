@@ -111,8 +111,8 @@ const TsParticles = (): ReactJSXElement => {
                 },
                 move: {
                   enable: true,
-                  speed: 2,
-                  direction: 'top',
+                  speed: 1,
+                  direction: 'bottom-left',
                   random: false,
                   straight: false,
                   out_mode: 'out',

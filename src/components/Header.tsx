@@ -1,19 +1,23 @@
 import { type FC } from 'react'
-import { AppBar, Box } from '@mui/material'
+// style
+import { AppBar, Box, Link, Toolbar } from '@mui/material'
+import '../css/index.css'
 
 const Header: FC = () => {
   const Logo = 'M.S'
 
   return (
-        <div>
-            <div>
-                <AppBar position="fixed" className='header-navbar' color="inherit">
-                    <Box sx={{ mx: 2, display: 'flex' }}>
-                        <h1 className='header-logo signature'>{Logo}</h1>
-                    </Box>
-                </AppBar>
-            </div>
-        </div>
+    <div>
+        <AppBar position="fixed" elevation={0} >
+          <Toolbar>
+            <Box sx={{ mx: 2, display: 'flex' }}>
+              <Link href="#" underline="none" color='primary.dark' className='header-logo-button'>
+                <h1 className='signature'>{Logo}</h1>
+              </Link>
+            </Box>
+          </Toolbar>
+        </AppBar>
+    </div>
   )
 }
 

@@ -13,7 +13,7 @@ const KeyVisual: FC = () => {
         <div className='key-bg'>
             <Container>
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Box sx={{ display: 'block' }}>
+                    <Box sx={{ display: 'block', color: 'primary.dark' }}>
                         <h1 className='key-title signature'>{keyTitle}</h1>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                             <p className='key-intro dark-text'>{keyMessage}</p>

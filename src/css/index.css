@@ -16,13 +16,11 @@ code {
 
 /* 筆記体 */
 .signature {
-    color: #006d77;
     font-family: "Sacramento", cursive;
 }
 
 /* セクション */
 .section-title {
-    color: #87bcc1;
     font-family: "Sacramento", cursive;
     font-size: 4rem;
     font-weight: 200;
@@ -30,7 +28,7 @@ code {
     margin-top: 2rem;
 }
 
-/* オリジナルカラーテーマ */
+/* オリジナルカラーテーマ
 .dark-text {
     color: #006d77;
 }
@@ -52,4 +50,4 @@ code {
 
 .bg-trans {
     background-color: transparent;
-}
+} */

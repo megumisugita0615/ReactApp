@@ -1,31 +1,34 @@
-import { type FC } from 'react'
 // Style
-import { Box, Container } from '@mui/material'
+import { Box, Container, Grid } from '@mui/material'
 import '../css/index.css'
 import '../css/Profile.css'
 // images
-import profilePhoto from '../img/my-profile.png'
+import profilePhoto from '../img/profilephoto.png'
 
-const Profile: FC = () => {
+const Profile = (): JSX.Element => {
   const profileIntro =
   <div>
-    <p>東京在住のWebエンジニア。デジタルマーケティング支援企業に勤務。</p>
-    <p>PHPとJavaScriptをよく書いています。最近はReactに力を入れて勉強中です。</p>
-    <p>人と一緒にものを作り上げていくことが大好きです。エンジニアリングもディレクション、どちらでもプロフェッショナルなクリエイターを目指しています。</p>
+    <p>都内在住のWebエンジニア。PHPとJavaScriptを使います。最近はAdobeツールも触り始めました。</p>
+    <p>エンジニアリングもディレクションもバランスよく、職種にとらわれないデジタルクリエイターを目指しています。</p>
+    <p>穏やかな性格ですが、譲れないものは譲れません。「とりあえずやってみる」と「後ろ向きな言葉を使わない」ことを大切にしています。</p>
   </div>
 
   return (
     <div>
       <Container>
-          <Box sx={{ display: 'flex', justifyContent: 'center', color: 'primary.contrastText' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
               <p className='section-title'>About</p>
           </Box>
-              <Box sx={{ display: 'flex', justifyContent: 'center', mr: 2 }}>
-                  <img src={profilePhoto} className="profile-photo" alt="profile" />
+          <Grid container spacing={2} alignItems='center' justifyContent='center' >
+            <Grid item lg={6}>
+              <Box>
+                <img src={profilePhoto} className="profile-photo" alt="profile" />
               </Box>
-              <Box className='profile-intro' sx={{ mb: 10 }}>
-                  {profileIntro}
-              </Box>
+            </Grid>
+            <Grid item lg={6}>
+              <Box>{profileIntro}</Box>
+            </Grid>
+          </Grid>
       </Container>
     </div>
   )

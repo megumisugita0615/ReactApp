@@ -1,6 +1,6 @@
 import { type ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 // Style
-import { Box, Container } from '@mui/material'
+import { Box, Card, Container } from '@mui/material'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 // components
 import Career from './components/Career'
@@ -16,28 +16,28 @@ function App (): ReactJSXElement {
     palette: {
       primary: {
         light: '#e7eeee',
-        main: 'transparent',
-        dark: '#87bcc1',
-        contrastText: '#006D77'
+        main: '#87bcc1',
+        dark: '#006D77',
+        contrastText: '#c18787'
       }
     }
   })
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ color: 'primary.contrastText' }}>
-        <Header/>
+      <Box sx={{ color: 'primary.dark' }}>
+        <Header />
         <KeyVisual/>
         <TsParticles />
-        <Box sx={{ bgcolor: 'primary.main' }}>
+        <Box sx={{ bgcolor: 'transparent' }}>
           <WaveAnimation/>
-            <Box sx={{ pt: '120vh' }}>
-              <Container>
-                <Profile/>
-                <Career/>
-                <Skill/>
-              </Container>
-            </Box>
+          <Box sx={{ pt: '120vh' }}>
+            <Container>
+              <Card sx={{ p: 5, mb: 5, color: 'primary.dark' }} style={{ borderRadius: '5rem' }}><Profile/></Card>
+              <Card sx={{ p: 5, mb: 5, color: 'primary.dark' }} style={{ borderRadius: '5rem' }}><Career/></Card>
+              <Card sx={{ p: 5, mb: 5, color: 'primary.dark' }} style={{ borderRadius: '5rem' }}><Skill/></Card>
+            </Container>
+          </Box>
         </Box>
       </Box>
     </ThemeProvider>

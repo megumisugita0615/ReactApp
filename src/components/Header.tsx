@@ -8,7 +8,7 @@ const Header: FC = () => {
 
   return (
     <div>
-        <AppBar position="fixed" elevation={0} >
+        <AppBar position="fixed" elevation={0} sx={{ bgcolor: 'transparent' }}>
           <Toolbar>
             <Box sx={{ mx: 2, display: 'flex' }}>
               <Link href="#" underline="none" color='primary.dark' className='header-logo-button'>
